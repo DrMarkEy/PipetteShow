@@ -1,0 +1,49 @@
+//********** Instructions
+//The last line of data shouldn't have a comma at the end.
+
+//********** Column Values
+// ID - (for your use only) to easily see which data line corresponds to an opening in the keyguard - numeric only
+// x - the x-coordinate of the lower-left corner of the rectangular and rounded rectangular openings and text,
+//			the center of circles and hotdogs
+// y - the y-coordinate of the lower-left corner of the rectangular and rounded rectangular openings and text,
+//			the center of circles and hotdogs
+// width - the width of the opening
+// height - the height of the opening
+// shape - the shape of the opening: 
+//             "r" = rectangular, 
+//             "c" = circular, 
+//             "hd" = hotdog, 
+//             "rr" = rounded-rectangle,
+//             "oa1"/"oa2"/"oa3"/"oa4 = outer arc in quadrants 1,2,3 and 4, respectively, 
+//             "ttext" = text engraved on the top surface of the keyguard, 
+//             "btext" = text engraved on the bottom surface of the keyguard, 
+//             "bump" = a hemisphere on the surface of the keyguard,
+//             "hridge" = a wall that runs horizontally on the surface of the keyguard
+//             "vridge" = a wall that runs vertically on the surface of the keyguard
+//
+//               - arcs use "x", "y" for the center of the arc along with "corner radius"
+//			     - for circular, hotdog, and rounded-rectangle shaped openings, and outer arcs, 
+//                     only "top slope" applies,all other slopes are ignored
+//               - ttext and btext use "x", "y", "height", "top slope", "bottom slope" and "other" - "top slope" determines the direction 
+//                     of the text, "bottom slope" determines the font style" (0=normal, 1=bold, 2=italic, 3=bold italic),
+//                     "other" holds the actual text to engrave - the value should be placed in double quotes
+//               - bump uses "x", "y" for the center of the bump along with "width" to determine the diameter of the bump
+//               - hridge and vridge use "x" and "y" for the starting point of the ridge, "width" or "height" for the length
+//                     of the ridge respectively, "top slope" for the height of the ridge and "bottom slope" for the thickness of the ridge.
+//
+// top slope - the slope of the top wall of the opening (30 to 90 degrees) or the direction of the text (0 to 360)
+// bottom slope - the slope of the bottom wall of the opening (30 to 90 degrees)
+// left slope - the slope of the left wall of the opening (30 to 90 degrees)
+// right slope - the slope of the right wall of the opening (30 to 90 degrees)
+// corner radius - the radius of each corner of a rounded rectangle or of an outer arc and height of walls and ridges
+// other - holds the text to engrave
+
+case_openings=[
+//  ID,       x,      y, width, height, shape, top slope, bottom slope, left slope, right slope, corner radius, other
+// [    1,       0,      0,     0,      0,   "r",        90,           90,         90,          90,            0,         ],
+// [    2,       0,      0,     0,      0,   "c",        90,           90,         90,          90,            0,         ],
+// [    3,       0,      0,     0,      0,  "hd",        90,           90,         90,          90,            0,         ],
+// [    4,       0,      0,     0,      0,  "rr",        90,           90,         90,          90,            0,         ]
+];
+
+

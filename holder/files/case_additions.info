@@ -1,0 +1,43 @@
+//********** Instructions
+//The last line of data shouldn't have a comma at the end.
+// Refer to https://volksswitch.org/index.php/volks-devices/fully-customizable-3d-printable-aac-keyguard-for-tablets/non-rectangular-keyguard-perimeters/
+// for detailed instructions in using this file.
+
+//********** Column Values
+// ID - (for your use only) to easily see which data line corresponds to an opening in the keyguard - numeric only
+// x - the x-coordinate of the anchor points of the additions
+// y - the y-coordinate of the anchor points of the additions
+// width - the width of the addition
+// height - the height of the addition
+// shape - the shape of the addition: 
+//             "r" = rectangle - use height and width, 
+//             "rr" = rounded rectangle - use height, width and corner radius, 
+//             "c" = circle - use width as the diameter, 
+//             "t1"/"t2"/"t3"/"t4" = triangles along case opening edges - use height and width, 
+//             "r1"/"r2"/"r3"/"r4" = rectangles along case opening edges - use height and width,
+//             "rr1"/"rr2"/"rr3"/"rr4" = rounded-rectangles along case opening edges - use height, width and corner radius,
+//             "cm1"/"cm2"/"cm3"/"cm4" = crescent moons along case opening edges - use height and width, 
+//             "f1"/"f2"/"f3"/"f4" = fillets - use width as the radius, 
+//             "ped1/ped2/ped3/ped4" = a standard clip-on strap pedestals at a specific x,y location
+//             "stab1/stab2/stab3/stab4" = a standard slide-in tabs at a specific x,y location
+
+// thickness - this parameter is reserved for future use, leave it at 0 for now
+// trim above - removes all of a shape above a certain height in mm relative to the lower-left corner of the case (set to -999 to ignore)
+// trim below - removes all of a shape below a certain height in mm relative to the lower-left corner of the case (set to -999 to ignore)
+// trim to right - removes all of a shape to the right in mm relative to the lower-left corner of the case (set to -999 to ignore)
+// trim to left - removes all of a shape to the left in mm relative to the lower-left corner of the case (set to -999 to ignore)
+// corner radius - the radius of each corner of a rounded rectangle
+// ... pedestals and slide-in tabs get all but their x,y locations from the customizer settings
+
+case_additions=[
+//  ID,       x,       y,   width, height,   shape, thickness, trim above, trim below, trim to right, trim to left, corner radius
+// [    1,       0,       0,       0,      0,     "r",         0,       -999,       -999,          -999,         -999,             0],
+// [    2,       0,       0,       0,      0,     "c",         0,       -999,       -999,          -999,         -999,             0],
+// [    3,       0,       0,       0,      0,    "t1",         0,       -999,       -999,          -999,         -999,             0],
+// [    4,       0,       0,       0,      0,   "cm1",         0,       -999,       -999,          -999,         -999,             0],
+// [    5,       0,       0,       0,      0,   "rr1",         0,       -999,       -999,          -999,         -999,             0],
+// [    6,       0,       0,       0,      0,    "f1",         0,       -999,       -999,          -999,         -999,             0],
+];
+
+
+
